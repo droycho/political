@@ -59,6 +59,20 @@ form {
   text-align: center;
 }
 
-h2 {
+h3 {
   text-align: center;
+}
+
+.btn {
+  margin-top: 50px;
+  margin-bottom: 300px;
+  float: left;
+}
+
+.radioImage {
+  max-height: 175px;
+  min-height: 175px;
+  max-width: 175px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }

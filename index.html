@@ -27,17 +27,105 @@
           <label for="date">Please enter the date:</label>
           <input id="date" class="form-control" type="date">
         </div>
+        <label for="party">Pick a political party:</label>
         <select class="form-control" id="party">
-          <option>Democrat</option>
-          <option>Republican</option>
-          <option>Independent</option>
-          <option>Green Party</option>
-          <option>Libertarian</option>
-          <option>Constitution Party</option>
+          <option></option>
+          <option value="15">Democrat</option>
+          <option value="0">Republican</option>
+          <option value="8">Independent</option>
+          <option value="15">Green Party</option>
+          <option value="0">Libertarian</option>
+          <option value="0">Constitution Party</option>
         </select>
-
+        <label for="party">Pick a President:</label>
+        <select class="form-control" id="president">
+          <option></option>
+          <option value="0">Ronald Reagan</option>
+          <option value="0">Richard Nixon</option>
+          <option value="15">Barack Obama</option>
+          <option value="15">Bill Clinton</option>
+          <option value="8">Herbert Hoover</option>
+          <option value="8">Howard Taft</option>
+        </select>
+        <h3>Rate the following options on a scale of 1-5</h3>
+        <label for="party">Tax Rates:</label>
+        <select class="form-control" id="tax">
+          <option></option>
+          <option value="3">1</option>
+          <option value="6">2</option>
+          <option value="9">3</option>
+          <option value="12">4</option>
+          <option value="15">5</option>
+        </select>
+        <label for="party">Social Programs:</label>
+        <select class="form-control" id="social">
+          <option></option>
+          <option value="15">1</option>
+          <option value="12">2</option>
+          <option value="9">3</option>
+          <option value="6">4</option>
+          <option value="3">5</option>
+        </select>
+        <label for="party">Foreign Policy:</label>
+        <select class="form-control" id="foreign">
+          <option></option>
+          <option value="3">1</option>
+          <option value="6">2</option>
+          <option value="9">3</option>
+          <option value="12">4</option>
+          <option value="15">5</option>
+        </select>
+        <label for="party">Economic Policy:</label>
+        <select class="form-control" id="economic">
+          <option></option>
+          <option value="15">1</option>
+          <option value="12">2</option>
+          <option value="9">3</option>
+          <option value="6">4</option>
+          <option value="3">5</option>
+        </select>
+        <label for="party">Good Looks:</label>
+        <select class="form-control" id="looks">
+          <option></option>
+          <option value="15">1</option>
+          <option value="12">2</option>
+          <option value="9">3</option>
+          <option value="6">4</option>
+          <option value="3">5</option>
+        </select>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="transportation" value="10" id="transportation">
+            <img class="radioImage" src="img/hillary.jpg" alt="Picture of hillary" />
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="transportation" value="30" id="transportation">
+            <img class="radioImage" src="img/bernie.gif" alt="Picture of hillary" />
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="transportation" value="0" id="transportation">
+            <img class="radioImage" src="img/donald.gif" alt="Picture of hillary" />
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="transportation" value="20" id="transportation">
+            <img class="radioImage" src="img/ted.gif" alt="Picture of hillary" />
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="transportation" value="0" id="transportation">
+            <img class="radioImage" src="img/john.gif" alt="Picture of hillary" />
+          </label>
+        </div>
         <button type="submit" class="btn">Submit</button>
       </form>
+
     </div>
   </body>
   </html>
