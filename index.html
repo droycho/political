@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Where are you on the <em>Political Spectrum</em>?</h1>
+      <h1>Where are you on the <strong><em>Political Spectrum</em></strong>?</h1>
       <img id="vote1" src="img/vote1.png" alt="Vote Logo with party mascots">
       <form class= "userInfo">
         <div class="form-group">
@@ -47,7 +47,7 @@
           <option value="8">Herbert Hoover</option>
           <option value="8">Howard Taft</option>
         </select>
-        <h3>Rate the following options on a scale of 1-5</h3>
+        <h3>Prioritize the following topics on a scale of 1-5 (1 being the highest, 5 the lowest):</h3>
         <label for="party">Tax Rates:</label>
         <select class="form-control" id="tax">
           <option></option>
@@ -93,39 +93,56 @@
           <option value="6">4</option>
           <option value="3">5</option>
         </select>
-        <div class="radio-inline">
-          <label>
-            <input type="radio" name="transportation" value="10" id="transportation">
-            <img class="radioImage" src="img/hillary.jpg" alt="Picture of hillary" />
-          </label>
-        </div>
-        <div class="radio-inline">
-          <label>
-            <input type="radio" name="transportation" value="30" id="transportation">
-            <img class="radioImage" src="img/bernie.gif" alt="Picture of hillary" />
-          </label>
-        </div>
-        <div class="radio-inline">
-          <label>
-            <input type="radio" name="transportation" value="0" id="transportation">
-            <img class="radioImage" src="img/donald.gif" alt="Picture of hillary" />
-          </label>
-        </div>
-        <div class="radio-inline">
-          <label>
-            <input type="radio" name="transportation" value="20" id="transportation">
-            <img class="radioImage" src="img/ted.gif" alt="Picture of hillary" />
-          </label>
-        </div>
-        <div class="radio-inline">
-          <label>
-            <input type="radio" name="transportation" value="0" id="transportation">
-            <img class="radioImage" src="img/john.gif" alt="Picture of hillary" />
-          </label>
-        </div>
+        <div class="radioContainer">
+          <h3>Pick a candidate:</h3>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="hillary" value="15" id="hillary"><label for="hillary">Hillary Clinton</label>
+              <img class="radioImage" src="img/hillary.jpg" alt="Picture of hillary" />
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="bernie" value="15" id="bernie"><label for="bernie">Bernie Sanders</label>
+              <img class="radioImage" src="img/bernie.gif" alt="Picture of bernie" />
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="donald" value="0" id="donald"><label for="donald">Donald Trump</label>
+              <img class="radioImage" src="img/donald.gif" alt="Picture of donald" />
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="ted" value="0" id="ted"><label for="ted">Ted Cruz</label>
+              <img class="radioImage" src="img/ted.gif" alt="Picture of ted" />
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" name="john" value="0" id="john"><label for="john">John Kasich</label>
+              <img class="radioImage" src="img/john.gif" alt="Picture of john" />
+            </label>
+          </div>
+      </div>
         <button type="submit" class="btn">Submit</button>
       </form>
-
+        <div class="results1">
+            <h3>Here are your results <span class="name"></span> on: <span class="date"></span></h3>
+            <div class="conservative">
+              <h3>You align with Conservative values.</h3>
+              <img class="resultsImg" src="img/gop.jpg" alt="republicans logo"/>
+            </div>
+            <div class="liberal">
+              <h3>You align with Liberal values.</h3>
+              <img class="resultsImg" src="img/dems.png" alt="democrats logo"/>
+            </div>
+            <div class="independent">
+              <h3>You align with Independent values.</h3>
+              <img class="resultsImg" src="img/ind.png" alt="independent logo">
+            </div>
+        </div>
     </div>
   </body>
   </html>

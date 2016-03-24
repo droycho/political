@@ -18,16 +18,30 @@ $(document).ready(function() {
     score += result;
     var result= parseInt($("#looks").val());
     score += result;
-    console.log(score);
+
 
     if (score < 60) {
-      alert("Conservative");
+      $(".conservative").show();
     } else if (score === 60) {
-      alert("Independent");
+      $(".independent").show();
     } else {
-      alert("Democrat")
+      $(".liberal").show();
     }
 
+
+    event.preventDefault();
+  });
+});
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    var nameInput = $("input#name").val();
+    var dateInput = $("input#date").val();
+    $(".name").text(nameInput);
+    $(".date").text(dateInput);
+    console.log(nameInput, dateInput);
+    $(".results1").show();
+    $(".userInfo").hide();
     event.preventDefault();
   });
 });

@@ -49,6 +49,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 form {
@@ -65,14 +66,42 @@ h3 {
 
 .btn {
   margin-top: 50px;
-  margin-bottom: 300px;
-  float: left;
+  margin-bottom: 100px;
+
 }
 
 .radioImage {
   max-height: 175px;
   min-height: 175px;
   max-width: 175px;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid;
+  border-radius: 3px;
+  border-color: black;
+  background-color: #4b4141;
+}
+.results1 {
+  display:none;
+  margin-bottom: 100px;
+}
+
+.conservative {
+  display:none;
+}
+
+.independent {
+  display: none;
+}
+
+.liberal {
+  display: none;
+}
+
+.resultsImg {
+  max-height: 500px;
+  max-width: auto;
+
 }
